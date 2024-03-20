@@ -1,20 +1,20 @@
 #ifndef publicacion_h
 #define publicacion_h
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
 #include "usuario.h"
 
-class Publicacion{
-int ID; 
+class Publicacion
+{
+    int ID;
 
-public: 
-string fesha; 
-string contenido; 
-Usuario* usuario; 
+public:
+    string fesha;
+    string contenido;
+    Usuario *usuario;
 
-void mostrarPublicacion(); 
+    void mostrarPublicacion();
 
-Publicacion (Usuario* usuario, string fesha, string contenido); 
-
-}; 
+    Publicacion(Usuario *usuario, string fesha, string contenido);
+};
 #endif

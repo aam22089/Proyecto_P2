@@ -1,30 +1,30 @@
 #ifndef usuario_h
 #define usuario_h
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
 #include "publicacion.h"
 
-class Usuario{
-int ID; 
+class Usuario
+{
+    int ID;
 
-public: 
-string nombre; 
-int edad; 
-string nacionalidad; 
-vector <Usuario*>Amigos; 
-vector <Publicacion*> Publicaciones; 
+public:
+    string nombre;
+    int edad;
+    string nacionalidad;
+    vector<Usuario *> Amigos;
+    vector<Publicacion *> Publicaciones;
 
-int getID();
-void mostrar(); 
-void mostrarAmigos(); 
-void mostrarPublicaciones(); 
-void agregarAmigo(Usuario* nuevoAmigo); 
-void crearPublicacion(); 
-Usuario* getAmigo(int ID); 
+    int getID();
+    void mostrar();
+    void mostrarAmigos();
+    void mostrarPublicaciones();
+    void agregarAmigo(Usuario *nuevoAmigo);
+    void crearPublicacion();
+    Usuario *getAmigo(int ID);
 
-Usuario(string nombre); 
-Usuario (string nombre, int edad); 
-Usuario (string nombre, int edad, string nacionalidad);
-
-}; 
+    Usuario(string nombre);
+    Usuario(string nombre, int edad);
+    Usuario(string nombre, int edad, string nacionalidad);
+};
 #endif
