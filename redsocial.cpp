@@ -1,27 +1,30 @@
 #include "redsocial.h"
-
-void RedSocial::agregarUsuario()
+#include "usuario.h"
+void RedSocial::agregarUsuario(Usuario u)
 {
     cout << "Escribe el username"<< endl;
-    cin >> nombre;
-    cout << "Escribe numero de usuario"<< endl;
-    cin >> numeroDeUsuario;
-    cout << "Escribe el numero de publicaciones"<< endl;
-    cin >> numeroDePublicaciones;
+    cin >> u.nombre;
+    cout << "Escribe la edad"<< endl;
+    cin >> u.edad;
+    cout << "Escribe la nacionalidads"<< endl;
+    cin >> u.nacionalidad;
     
 }
 
 void RedSocial::mostrarUsuarios()
 {
+
 }
 
 void RedSocial::mostrarPublicaciones()
 {
+
 }
 
 Usuario *RedSocial::getUsuario(int ID)
 {
-    return nullptr;
+    Usuario *p;
+    return p;
 }
 
 RedSocial::RedSocial(string nombre)

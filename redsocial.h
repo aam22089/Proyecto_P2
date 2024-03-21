@@ -15,7 +15,7 @@ public:
     int numeroDeUsuario;
     int numeroDePublicaciones;
 
-    void agregarUsuario();
+    void agregarUsuario(Usuario u);
     void mostrarUsuarios();
     void mostrarPublicaciones();
     Usuario *getUsuario(int ID);
