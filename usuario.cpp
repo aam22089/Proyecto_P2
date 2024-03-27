@@ -48,17 +48,18 @@ Usuario *Usuario::getAmigo(int ID)
 
 Usuario::Usuario(string nombre)
 {
-    nombre = name; 
+    this->nombre = nombre; 
 }
 
 Usuario::Usuario(string nombre, int edad)
 {
-    name = nombre; 
-    ; 
+    this-> nombre = nombre; 
+    this-> edad = edad; 
 }
 
 Usuario::Usuario(string nombre, int edad, string nacionalidad)
 {
-
-
+    this-> nombre = nombre; 
+    this-> edad = edad; 
+    this-> nacionalidad = nacionalidad; 
 }

@@ -1,5 +1,6 @@
 #include "redsocial.h"
 #include "usuario.h"
+#include "publicacion.h"
 
 void RedSocial::agregarUsuario(Usuario u)
 {
@@ -13,7 +14,7 @@ void RedSocial::agregarUsuario(Usuario u)
 
 void RedSocial::mostrarUsuarios()
 {
-    for (int i=0; i< Usuarios; i++)
+    for (int i=0; i< Usuarios.size(); i++)
     {
         cout << Usuarios[i] << endl; 
     }

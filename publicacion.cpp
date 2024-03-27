@@ -2,11 +2,15 @@
 
 void Publicacion::mostrarPublicacion()
 {
-    cout << "Fecha: " << fesha << endl;
-    cout << "Contenido: " << contenido << endl;
-    cout << "Usuario: " << usuario->nombre << endl;
+    cout << fesha << endl;
+    cout << usuario->nombre << endl;
+    cout << contenido << endl;
+   
 }
 
 Publicacion::Publicacion(Usuario *usuario, string fesha, string contenido)
 {
+    this-> fesha = fesha; 
+    this-> contenido = contenido; 
+    this-> usuario = usuario; 
 }
