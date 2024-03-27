@@ -11,12 +11,10 @@ int Usuario::getID()
 
 void Usuario::mostrar()
 {
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
+    cout << "El ID de este usuatio es: " << ID << endl;
+    cout << "El nombre de este usuario es: "<< nombre << endl;
+    cout << "Este usuario es: "<< nacionalidad << endl;
+    cout << "Este usuario tiene" << edad << " anios" << endl;
 }
 
 void Usuario::mostrarAmigos()
@@ -50,12 +48,17 @@ Usuario *Usuario::getAmigo(int ID)
 
 Usuario::Usuario(string nombre)
 {
+    nombre = name; 
 }
 
 Usuario::Usuario(string nombre, int edad)
 {
+    name = nombre; 
+    ; 
 }
 
 Usuario::Usuario(string nombre, int edad, string nacionalidad)
 {
+
+
 }
