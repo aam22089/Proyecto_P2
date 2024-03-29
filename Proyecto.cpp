@@ -6,7 +6,7 @@ using namespace std;
 #include "publicacion.h"
 
 int main(){
-    
+    cout << mostrarUsuarios(); 
 
 
 
