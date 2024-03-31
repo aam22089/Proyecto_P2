@@ -30,7 +30,7 @@ void RedSocial::mostrarPublicaciones()
 
 Usuario *RedSocial::getUsuario(int ID)
 {
-   if (ID == this->Usuario.ID)
+   if (ID == this->usuario.ID)
    {
     Usuario *p;
     return p;

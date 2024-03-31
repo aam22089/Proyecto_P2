@@ -6,7 +6,8 @@ using namespace std;
 #include "publicacion.h"
 
 int main(){
-    cout << mostrarUsuarios(); 
+    RedSocial rs("Xconnect"); 
+    rs.mostrarUsuarios(); 
 
 
 
