@@ -8,8 +8,7 @@ using namespace std;
 int main(){
     RedSocial rs("Xconnect"); 
     rs.mostrarUsuarios(); 
-
-
+    rs.mostrarPublicaciones(); 
 
     return 0; 
 }

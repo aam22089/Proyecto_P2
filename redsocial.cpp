@@ -30,19 +30,8 @@ void RedSocial::mostrarPublicaciones()
 
 Usuario *RedSocial::getUsuario(int ID)
 {
-   if (ID == this->usuario.ID)
-   {
-    Usuario *p;
-    return p;
-    }
-    else {
-        return nullptr; 
-        cout << "Este usuario no existe" << endl; 
-
-    }
-
-
-    }
+    
+}
 
 RedSocial::RedSocial(string nombre)
 {

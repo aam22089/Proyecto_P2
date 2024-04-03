@@ -29,7 +29,8 @@ void Usuario::mostrarPublicaciones()
 {
     for (int i = 0; i < Publicaciones.size(); i++)
     {
-        cout << i + 1 << ". " << Publicaciones[i]->mostrarPublicacion() << endl;
+        Publicaciones[i]-> mostrarPublicacion(); 
+        cout << i + 1 << ". " << endl;
     }
 }
 
