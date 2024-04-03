@@ -1,13 +1,15 @@
 #include "usuario.h"
 #include "publicacion.h"
-#include <bits/stdc++.h>
+#include <string>
+#include <vector>
+#include <iostream>
 using namespace std;
 
 int Usuario::getID()
 {
     int id = this->ID;
     return id;
-}
+} 
 
 void Usuario::mostrar()
 {
