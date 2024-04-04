@@ -44,7 +44,7 @@ void Usuario::crearPublicacion()
 {
     cout << "Nueva publicacion" << endl; 
     Publicacion pn(Usuario *usuario); 
-    
+
 }
 
 Usuario *Usuario::getAmigo(int ID)
