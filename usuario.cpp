@@ -43,10 +43,8 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
 void Usuario::crearPublicacion()
 {
     cout << "Nueva publicacion" << endl; 
-    Publicacion pn(Usuario *usuario);
-    pn.fesha = 0; 
-    cin >> fesha; 
-
+    Publicacion pn(Usuario *usuario); 
+    
 }
 
 Usuario *Usuario::getAmigo(int ID)
