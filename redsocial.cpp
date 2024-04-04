@@ -3,64 +3,69 @@
 #include "publicacion.h"
 #include <vector>
 
-void RedSocial::agregarUsuario(Usuario* up)
+void RedSocial::agregarUsuario(Usuario *up)
 {
-    cout << "Escribe el username"<< endl;
+    cout << "Escribe el username" << endl;
     cin >> up->nombre;
-    cout << "Escribe la edad"<< endl;
+    cout << "Escribe la edad" << endl;
     cin >> up->edad;
-    cout << "Escribe la nacionalidad"<< endl;
+    cout << "Escribe la nacionalidad" << endl;
     cin >> up->nacionalidad;
     this->Usuarios.push_back(up);
 }
 
 void RedSocial::mostrarUsuarios()
 {
-    for (int i=0; i< Usuarios.size(); i++)
+    for (int i = 0; i < Usuarios.size(); i++)
     {
-        cout << Usuarios[i]->nombre << endl; 
+        cout << Usuarios[i]->nombre << endl;
     }
 }
 
 void RedSocial::mostrarPublicaciones()
 {
- for (int i=0; i< Publicaciones.size(); i++)
+    for (int i = 0; i < Publicaciones.size(); i++)
     {
-        Publicaciones[i]->mostrarPublicacion(); 
+        Publicaciones[i]->mostrarPublicacion();
     }
 }
 
 Usuario *RedSocial::getUsuario(int ID)
 {
-   /* for (int i= 0; this->ID == ID; i++ )*/
-   int i = 0; 
-   bool dracovish = false; 
-   while (Usuarios[i]-> getID()){
+    /* for (int i= 0; this->ID == ID; i++ )*/
+    int i = 0;
+    bool dracovish = false;
+    while (i <= Usuarios.size())
+    {
+        if (Usuarios[i]->getID() == ID)
+        {
+            dracovish = true;
+        }
+        i++;
+    }
     if (true)
     {
-
     }
     else
     {
-        return nullptr; 
+        return nullptr;
     }
-   }
 }
 
 RedSocial::RedSocial(string nombre)
 {
-    this->nombre=nombre;
+    this->nombre = nombre;
 }
 
 RedSocial::RedSocial(string nombre, vector<Usuario *> Usuarios)
 {
-    this->nombre=nombre;
-    this->Usuarios=Usuarios;
+    this->nombre = nombre;
+    this->Usuarios = Usuarios;
 }
 
 RedSocial::RedSocial(string nombre, vector<Usuario *> Usuarios, vector<Publicacion *> Publicaciones)
 {
-    this->nombre=nombre;
-    this->Usuarios=Usuarios;
-    this->Publicaciones=Publicaciones;
+    this->nombre = nombre;
+    this->Usuarios = Usuarios;
+    this->Publicaciones = Publicaciones;
 }
