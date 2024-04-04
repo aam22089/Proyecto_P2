@@ -35,16 +35,21 @@ Usuario *RedSocial::getUsuario(int ID)
     /* for (int i= 0; this->ID == ID; i++ )*/
     int i = 0;
     bool dracovish = false;
+    
+    int snivy; 
+
     while (i <= Usuarios.size())
     {
         if (Usuarios[i]->getID() == ID)
         {
+            snivy = i; 
             dracovish = true;
         }
         i++;
     }
-    if (true)
+    if (dracovish)
     {
+        Usuario* un = Usuarios[snivy]; 
     }
     else
     {
