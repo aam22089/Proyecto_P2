@@ -42,7 +42,15 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
 
 void Usuario::crearPublicacion()
 {
+<<<<<<< HEAD
     
+=======
+    cout << "Nueva publicacion" << endl; 
+    Publicacion pn 
+
+    
+
+>>>>>>> f4577a56b9d1cc7ab288ef29a428685bcdb2de10
 }
 
 Usuario *Usuario::getAmigo(int ID)
