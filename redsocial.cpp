@@ -32,7 +32,19 @@ void RedSocial::mostrarPublicaciones()
 
 Usuario *RedSocial::getUsuario(int ID)
 {
-    
+   /* for (int i= 0; this->ID == ID; i++ )*/
+   int i = 0; 
+   bool dracovish = false; 
+   while (Usuarios[i]-> getID()){
+    if (true)
+    {
+
+    }
+    else
+    {
+        return nullptr; 
+    }
+   }
 }
 
 RedSocial::RedSocial(string nombre)
