@@ -42,6 +42,7 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
 
 void Usuario::crearPublicacion()
 {
+    
 }
 
 Usuario *Usuario::getAmigo(int ID)

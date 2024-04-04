@@ -1,15 +1,17 @@
 #include "redsocial.h"
 #include "usuario.h"
 #include "publicacion.h"
+#include <vector>
 
-void RedSocial::agregarUsuario(Usuario u)
+void RedSocial::agregarUsuario(Usuario* up)
 {
     cout << "Escribe el username"<< endl;
-    cin >> u.nombre;
+    cin >> up->nombre;
     cout << "Escribe la edad"<< endl;
-    cin >> u.edad;
-    cout << "Escribe la nacionalidads"<< endl;
-    cin >> u.nacionalidad;
+    cin >> up->edad;
+    cout << "Escribe la nacionalidad"<< endl;
+    cin >> up->nacionalidad;
+    this->Usuarios.push_back(up);
 }
 
 void RedSocial::mostrarUsuarios()
