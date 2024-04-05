@@ -7,8 +7,8 @@ void RedSocial::agregarUsuario(Usuario up)
 {
     Usuario *nu;
     
-    this->Usuarios.push_back(nu);
-}
+    this->Usuarios.push_back();
+} 
 
 void RedSocial::mostrarUsuarios()
 {
