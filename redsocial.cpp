@@ -3,11 +3,15 @@
 #include "publicacion.h"
 #include <vector>
 
-void RedSocial::agregarUsuario(Usuario up)
+void RedSocial::agregarUsuario(Usuario *up)
 {
-    Usuario *nu;
-    
-    this->Usuarios.push_back(nu);
+    cout << "Escribe el username" << endl;
+    cin >> up->nombre;
+    cout << "Escribe la edad" << endl;
+    cin >> up->edad;
+    cout << "Escribe la nacionalidad" << endl;
+    cin >> up->nacionalidad;
+    this->Usuarios.push_back(up);
 }
 
 void RedSocial::mostrarUsuarios()
@@ -46,7 +50,6 @@ Usuario *RedSocial::getUsuario(int ID)
     if (dracovish)
     {
         Usuario* un = Usuarios[snivy]; 
-        return un;
     }
     else
     {
