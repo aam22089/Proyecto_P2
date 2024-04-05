@@ -50,6 +50,7 @@ Usuario *RedSocial::getUsuario(int ID)
     if (dracovish)
     {
         Usuario* un = Usuarios[snivy]; 
+        return un;
     }
     else
     {
