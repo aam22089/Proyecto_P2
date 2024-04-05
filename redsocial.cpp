@@ -3,7 +3,7 @@
 #include "publicacion.h"
 #include <vector>
 
-void RedSocial::agregarUsuario(Usuario *up)
+void RedSocial::agregarUsuario(Usuario up)
 {
     Usuario *nu;
     
