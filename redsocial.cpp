@@ -3,12 +3,12 @@
 #include "publicacion.h"
 #include <vector>
 
-void RedSocial::agregarUsuario(Usuario up)
+void RedSocial::agregarUsuario(Usuario *up)
 {
     Usuario *nu;
     
-    this->Usuarios.push_back();
-} 
+    this->Usuarios.push_back(nu);
+}
 
 void RedSocial::mostrarUsuarios()
 {
@@ -46,7 +46,6 @@ Usuario *RedSocial::getUsuario(int ID)
     if (dracovish)
     {
         Usuario* un = Usuarios[snivy]; 
-        return un;
     }
     else
     {
