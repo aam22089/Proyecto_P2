@@ -2,8 +2,8 @@
 #define publicacion_h
 #include <bits/stdc++.h>
 using namespace std;
-#include "usuario.h"
 
+class Usuario; 
 class Publicacion
 {
     int ID;

@@ -1,4 +1,5 @@
 #include "publicacion.h"
+#include "usuario.h"
 
 void Publicacion::mostrarPublicacion()
 {
