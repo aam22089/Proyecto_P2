@@ -13,10 +13,10 @@ int Usuario::getID()
 
 void Usuario::mostrar()
 {
-    cout << "El ID de este usuatio es: " << ID << endl;
-    cout << "El nombre de este usuario es: "<< nombre << endl;
-    cout << "Este usuario es: "<< nacionalidad << endl;
-    cout << "Este usuario tiene" << edad << " anios" << endl;
+    cout << "ID: " << ID << endl;
+    cout << nombre << endl;
+    cout << "Nacionalidad: " << nacionalidad << endl;
+    cout << "Edad: " << edad << " anios" << endl;
 }
 
 void Usuario::mostrarAmigos()

@@ -6,6 +6,7 @@ using namespace std;
 class Publicacion; 
 class Usuario
 {
+    private: 
     int ID;
 
 public:

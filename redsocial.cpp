@@ -14,7 +14,8 @@ void RedSocial::mostrarUsuarios()
 {
     for (int i = 0; i < Usuarios.size(); i++)
     {
-        cout << Usuarios[i]->nombre << endl;
+        Usuarios[i]->  mostrar();
+        cout << endl; 
     }
 }
 
