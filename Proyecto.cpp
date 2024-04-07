@@ -12,7 +12,7 @@ int main(){
     rs.agregarUsuario(u1);
     rs.agregarUsuario(u2);
 
-    Publicacion p1(); 
+    //redsocial:Publicacion p1( , "12-de-marzo", "ostias"); 
 
     rs.mostrarUsuarios(); 
     rs.mostrarPublicaciones(); 

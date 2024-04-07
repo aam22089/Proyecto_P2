@@ -1,5 +1,6 @@
 #include "publicacion.h"
 #include "usuario.h"
+#include "redsocial.h"
 
 void Publicacion::mostrarPublicacion()
 {
