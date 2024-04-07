@@ -76,6 +76,7 @@ do {
                 u->crearPublicacion();
                 break;
                 case 4:
+                
 
                 break;
                 case 5:
