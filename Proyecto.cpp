@@ -63,7 +63,7 @@ do {
         string nacionalidad; 
         cin >> nacionalidad; 
 
-        Usuario uz(name, edad, nacionalidad);
+        Usuario uz(nombre, edad, nacionalidad);
 
         rs.agregarUsuario(uz);  
         break; 
