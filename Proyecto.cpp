@@ -49,6 +49,26 @@ do {
         int id;
         cin >> id; 
         rs.getUsuario(id);
+
+        cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl; 
+        cout << "1 ver lista de amigos." << endl; 
+        cout << "2 ver publicaciones." << endl; 
+        cout << "3 crear publicacion." << endl; 
+        cout << "4 entrar al perfil de un amigo." << endl; 
+        cout << "5 agregar un nuevo amigo." << endl; 
+        cout << "6 para volver al menu de la red." << endl; 
+
+        int verusuario; 
+        cin >> verusuario; 
+            switch(){
+                case 
+
+
+
+
+
+
+            }
         break;
 
         case 4: 
