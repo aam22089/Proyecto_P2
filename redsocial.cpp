@@ -30,6 +30,7 @@ void RedSocial::mostrarPublicaciones()
 Usuario *RedSocial::getUsuario(int ID)
 {
     /* for (int i= 0; this->ID == ID; i++ )*/
+    Usuario getID();
     int i = 0;
     bool dracovish = false;
     

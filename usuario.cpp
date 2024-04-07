@@ -55,7 +55,29 @@ void Usuario::crearPublicacion()
 
 Usuario *Usuario::getAmigo(int ID)
 {
-    return nullptr;
+    int i = 0;
+    bool eevee = false;
+    
+    int sprigatito; 
+
+    while (i <= Amigos.size())
+    {
+        if (Amigos[i]->getID() == ID)
+        {
+            sprigatito = i; 
+            eevee = true;
+        }
+        i++;
+    }
+    if (eevee)
+    {
+        Usuario* un = Amigos[sprigatito];
+        return un;
+    }
+    else
+    {
+        return nullptr;
+    }
 }
 
 Usuario::Usuario(string nombre)
