@@ -14,8 +14,6 @@ int main(){
     cout << "4 para agregar un nuevo usuario. " << endl; 
     cout << "Ninguna de las anteriores para salir del programa. " << endl; 
 
-    
-
     RedSocial rs("Xconnect"); 
 
     Usuario u1("Tilin123", 12, "Guatemalteco"); 
@@ -33,7 +31,6 @@ do {
     int edad; 
     string nacionalidad; 
     Usuario uz(nombre, edad, nacionalidad);
-
 
     switch(op)
     {
@@ -74,10 +71,10 @@ do {
         return 0; 
         break; 
     }
-    
+
 } while(true);
 
-    //redsocial:Publicacion p1( , "12-de-marzo", "ostias"); 
+    //Publicacion p1( , "12-de-marzo", "ostias"); 
 
     return 0; 
 }
