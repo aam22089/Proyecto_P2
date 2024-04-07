@@ -51,6 +51,7 @@ Usuario *RedSocial::getUsuario(int ID)
     }
     else
     {
+        cout << "El usuario no existe." << endl;
         return nullptr;
     }
 }
