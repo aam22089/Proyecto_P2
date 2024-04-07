@@ -60,9 +60,9 @@ do {
 
         int verusuario; 
         cin >> verusuario; 
-            switch(){
+            switch(verusuario){
                 case 1: 
-                usuario -> mostrarAmigos();  
+                Usuario mostrarAmigos();  
                 break; 
 
 
