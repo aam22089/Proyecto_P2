@@ -94,15 +94,13 @@ do {
         cout << "Ingrese los datos del nuevo usuario:  " << endl;
          
         cout << "Username: " << endl;  
-        cin >> nombre;
+        cin >> uz.nombre;
 
         cout << "Edad: " << endl; 
-        cin >> edad; 
-
+        cin >> uz.edad; 
         cout << "Nacionalidad: " << endl; 
          
-        cin >> nacionalidad; 
-
+        cin >> uz.nacionalidad; 
         rs.agregarUsuario(uz);  
         break; 
 
