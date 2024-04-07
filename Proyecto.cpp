@@ -6,6 +6,7 @@ using namespace std;
 #include "publicacion.h"
 
 int main(){
+menu:
     cout << "Bienvenido a nuestra red, que desea hacer?" << endl;
     cout << "Ingrese: " << endl; 
     cout << "1 para ver los usuarios de esta red." << endl; 
@@ -46,10 +47,11 @@ do {
 
         case 3:
         cout << "Ingrese el ID del usuario: " << endl;
-        int id;
+        int id, ida;
         cin >> id; 
-        rs.getUsuario(id);
-
+        Usuario* u=rs.getUsuario(id);
+        Usuario* na;
+        u->mostrar();
         cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl; 
         cout << "1 ver lista de amigos." << endl; 
         cout << "2 ver publicaciones." << endl; 
@@ -62,14 +64,25 @@ do {
         cin >> verusuario; 
             switch(verusuario){
                 case 1: 
-                Usuario mostrarAmigos();  
+                u->mostrarAmigos();  
                 break; 
+                case 2:
+                u->mostrarPublicaciones();
+                break;
+                case 3:
+                u->crearPublicacion();
+                break;
+                case 4:
 
-
-
-
-
-
+                break;
+                case 5:
+                cout << "Ingrese el ID del nuevo amigo"<< endl;
+                cin >> ida;
+                u->agregarAmigo(rs.getUsuario(ida));
+                break;
+                case 6:
+                goto menu;
+                break;
             }
         break;
 

@@ -46,7 +46,6 @@ Usuario *RedSocial::getUsuario(int ID)
     }
     if (dracovish)
     {
-        Usuarios[snivy]->mostrar();
         Usuario* un = Usuarios[snivy]; 
         return un; 
     }
