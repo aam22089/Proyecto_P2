@@ -60,11 +60,12 @@ do {
 
         int verusuario; 
         cin >> verusuario; 
-            switch(){
-                case 
+            switch(verusuario){
+                case 1:
 
 
-
+                case 2:
+                rs.
 
 
 
