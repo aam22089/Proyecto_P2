@@ -45,7 +45,9 @@ do {
 
         break; 
 
-        case 3:
+        do
+        {
+            case 3:
         cout << "Ingrese el ID del usuario: " << endl;
         int id, ida;
         cin >> id; 
@@ -86,7 +88,8 @@ do {
                 break;
             }
         break;
-
+        } while (true);
+        
         case 4: 
         cout << "Ingrese los datos del nuevo usuario:  " << endl;
          
