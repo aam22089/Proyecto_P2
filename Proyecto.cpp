@@ -49,7 +49,8 @@ do {
         cout << "Ingrese el ID del usuario: " << endl;
         int id, ida;
         cin >> id; 
-        Usuario* u=rs.getUsuario(id);
+        Usuario* u; 
+        u = rs.getUsuario(id);
         Usuario* na;
         u->mostrar();
         cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl; 
