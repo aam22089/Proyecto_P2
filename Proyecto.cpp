@@ -31,7 +31,8 @@ do {
     string nombre; 
     int edad; 
     string nacionalidad; 
-    Usuario uz(nombre, edad, nacionalidad);
+    Usuario* user;
+    user = new Usuario(nombre, edad, nacionalidad);
 
     switch(op)
     {
@@ -95,14 +96,14 @@ do {
         cout << "Ingrese los datos del nuevo usuario:  " << endl;
          
         cout << "Username: " << endl;  
-        cin >> uz.nombre;
+        cin >> nombre;
 
         cout << "Edad: " << endl; 
-        cin >> uz.edad; 
-        cout << "Nacionalidad: " << endl; 
-         
-        cin >> uz.nacionalidad; 
-        rs.agregarUsuario(uz);  
+        cin >> edad; 
+        
+        cout << "Nacionalidad: " << endl;  
+        cin >> nacionalidad; 
+        rs.agregarUsuario();  
         break; 
 
         case 5: 
