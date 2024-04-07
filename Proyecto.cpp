@@ -29,6 +29,12 @@ do {
     cin >> op;
     cout << endl;
 
+    string nombre; 
+    int edad; 
+    string nacionalidad; 
+    Usuario uz(nombre, edad, nacionalidad);
+
+
     switch(op)
     {
         case 1: 
@@ -52,18 +58,14 @@ do {
         cout << "Ingrese los datos del nuevo usuario:  " << endl;
          
         cout << "Username: " << endl;  
-        string nombre; 
         cin >> nombre;
 
         cout << "Edad: " << endl; 
-        int edad; 
         cin >> edad; 
 
         cout << "Nacionalidad: " << endl; 
-        string nacionalidad; 
+         
         cin >> nacionalidad; 
-
-        Usuario uz(nombre, edad, nacionalidad);
 
         rs.agregarUsuario(uz);  
         break; 
@@ -72,6 +74,7 @@ do {
         return 0; 
         break; 
     }
+    
 } while(true);
 
     //redsocial:Publicacion p1( , "12-de-marzo", "ostias"); 
