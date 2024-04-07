@@ -44,6 +44,25 @@ int main(){
         rs.getUsuario(id);
         break;
 
+        case 4: 
+        cout << "Ingrese los datos del nuevo usuario:  " << endl;
+         
+        cout << "Username: " << endl; 
+        string nombre; 
+        cin >> nombre;
+
+        cout << "Edad: " << endl; 
+        int edad; 
+        cin >> edad; 
+
+        cout << "Nacionalidad: " << endl; 
+        string nacionalidad; 
+        cin >> nacionalidad; 
+
+        Usuario uz(nombre, edad, nacionalidad);
+
+        rs.agregarUsuario(uz);  
+        break; 
     }
 
    
