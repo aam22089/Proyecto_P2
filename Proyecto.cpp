@@ -14,9 +14,7 @@ int main(){
     cout << "4 para agregar un nuevo usuario. " << endl; 
     cout << "Ninguna de las anteriores para salir del programa. " << endl; 
 
-    int op;
-    cin >> op;
-    cout << endl; 
+    
 
     RedSocial rs("Xconnect"); 
 
@@ -24,6 +22,12 @@ int main(){
     Usuario u2("FazePepinito42", 24, "Estadounidense"); 
     rs.agregarUsuario(u1);
     rs.agregarUsuario(u2);
+
+do {
+
+    int op;
+    cin >> op;
+    cout << endl;
 
     switch(op)
     {
@@ -47,7 +51,7 @@ int main(){
         case 4: 
         cout << "Ingrese los datos del nuevo usuario:  " << endl;
          
-        cout << "Username: " << endl; 
+        cout << "Username: " << endl;  
         string nombre; 
         cin >> nombre;
 
@@ -59,18 +63,18 @@ int main(){
         string nacionalidad; 
         cin >> nacionalidad; 
 
-        Usuario uz(nombre, edad, nacionalidad);
+        Usuario uz(name, edad, nacionalidad);
 
         rs.agregarUsuario(uz);  
         break; 
-    }
 
-   
-    
+        case 5: 
+        return 0; 
+        break; 
+    }
+} while(true);
 
     //redsocial:Publicacion p1( , "12-de-marzo", "ostias"); 
 
-    
-    
     return 0; 
 }
