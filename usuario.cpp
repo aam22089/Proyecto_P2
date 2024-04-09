@@ -42,6 +42,7 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
     Usuario *amigo = nuevoAmigo;
 
     Amigos.push_back(amigo);
+    
 }
 
 void Usuario::crearPublicacion()

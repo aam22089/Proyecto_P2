@@ -1,159 +1,171 @@
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
 
 #include "redsocial.h"
 #include "usuario.h"
 #include "publicacion.h"
 
-int main(){
+int main()
+{
 menu:
     cout << "Bienvenido a nuestra red, que desea hacer?" << endl;
-    cout << "Ingrese: " << endl; 
-    cout << "1 para ver los usuarios de esta red." << endl; 
-    cout << "2 para ver las publicaciones que han sido registradas." << endl; 
-    cout << "3 para entrar al perfil de un usuario por medio de su ID." << endl; 
-    cout << "4 para agregar un nuevo usuario. " << endl; 
-    cout << "Ninguna de las anteriores para salir del programa. " << endl; 
+    cout << "Ingrese: " << endl;
+    cout << "1 para ver los usuarios de esta red." << endl;
+    cout << "2 para ver las publicaciones que han sido registradas." << endl;
+    cout << "3 para entrar al perfil de un usuario por medio de su ID." << endl;
+    cout << "4 para agregar un nuevo usuario. " << endl;
+    cout << "Ninguna de las anteriores para salir del programa. " << endl;
 
-    RedSocial rs("Xconnect"); 
+    RedSocial rs("Xconnect");
 
-    Usuario u1("Tilin123", 12, "Guatemalteco"); 
-    Usuario u2("FazePepinito42", 24, "Estadounidense"); 
+    Usuario u1("Tilin123", 12, "Guatemalteco");
+    Usuario u2("FazePepinito42", 24, "Estadounidense");
+    Usuario u3("Bananin", 87, "Peruano");
     rs.agregarUsuario(u1);
     rs.agregarUsuario(u2);
+    rs.agregarUsuario(u3);
 
-do {
-
-    int op;
-    cin >> op;
-    cout << endl;
-
-    string nombre; 
-    int edad; 
-    string nacionalidad; 
-    Usuario uz(nombre, edad, nacionalidad);
-
-    switch(op)
+    do
     {
-    case 1: 
-    cout << endl; 
-    rs.mostrarUsuarios(); 
-    break; 
 
-    case 2: 
-    rs.mostrarPublicaciones(); 
-    break; 
+        int op;
+        cin >> op;
+        cout << endl;
 
-        do
+        string nombre;
+        int edad;
+        string nacionalidad;
+        Usuario uz(nombre, edad, nacionalidad);
+
+        switch (op)
         {
-        case 3:
-        cout << "Ingrese el ID del usuario: " << endl;
-        int id, ida;
-        cin >> id; 
-        Usuario* u; 
-       
-        u = rs.getUsuario(id);
-        Usuario* na;
-        u->mostrar();
-        cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl; 
-        cout << "1 ver lista de amigos." << endl; 
-        cout << "2 ver publicaciones." << endl; 
-        cout << "3 crear publicacion." << endl; 
-        cout << "4 entrar al perfil de un amigo." << endl; 
-        cout << "5 agregar un nuevo amigo." << endl; 
-        cout << "6 para volver al menu de la red." << endl; 
+        case 1:
+            cout << endl;
+            rs.mostrarUsuarios();
+            break;
 
-        int verusuario; 
-        cin >> verusuario; 
-            switch(verusuario){
-                case 1: 
-                u->mostrarAmigos();  
-                break; 
+        case 2:
+            rs.mostrarPublicaciones();
+            break;
+
+        case 3:
+            cout << "Ingrese el ID del usuario: " << endl;
+            int id, ida;
+            cin >> id;
+ amigo:
+            Usuario *u;
+            u = rs.getUsuario(id);
+            Usuario *na;
+            u->mostrar();
+            do
+            {
+                cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl;
+                cout << "1 ver lista de amigos." << endl;
+                cout << "2 ver publicaciones." << endl;
+                cout << "3 crear publicacion." << endl;
+                cout << "4 entrar al perfil de un amigo." << endl;
+                cout << "5 agregar un nuevo amigo." << endl;
+                cout << "6 para volver al menu de la red." << endl;
+
+                int verusuario;
+                cin >> verusuario;
+                switch (verusuario)
+                {
+                case 1:
+                    u->mostrarAmigos();
+                    cout << endl;
+                    break;
                 case 2:
-                u->mostrarPublicaciones();
-                break;
+                    u->mostrarPublicaciones();
+                    cout << endl;
+                    break;
                 case 3:
-                u->crearPublicacion();
-                break;
+                    u->crearPublicacion();
+                    cout << endl;
+                    break;
                 case 4:
+                    cout << "Ingrese el ID del amigo: " << endl;
+                    cin >> id;
+                    goto amigo;
+/**
+                    Usuario *a;
+                    a = rs.getUsuario(id);
+                    a->mostrar();
                     do
                     {
-                    cout << "Ingrese el ID del usuario: " << endl;
-                    int id, ida;
-                    cin >> id; 
-                    Usuario* u; 
-       
-                    u = rs.getUsuario(id);
-                    Usuario* na;
-                    u->mostrar();
-                    cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl; 
-                    cout << "1 ver lista de amigos." << endl; 
-                    cout << "2 ver publicaciones." << endl; 
-                    cout << "3 crear publicacion." << endl; 
-                    cout << "4 entrar al perfil de un amigo." << endl; 
-                    cout << "5 agregar un nuevo amigo." << endl; 
-                    cout << "6 para volver al menu de la red." << endl; 
 
-                    int verusuario; 
-                    cin >> verusuario; 
-                        switch(verusuario)
+                        cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl;
+                        cout << "1 ver lista de amigos." << endl;
+                        cout << "2 ver publicaciones." << endl;
+                        cout << "3 crear publicacion." << endl;
+                        cout << "4 entrar al perfil de un amigo." << endl;
+                        cout << "5 agregar un nuevo amigo." << endl;
+                        cout << "6 para volver al menu de la red." << endl;
+
+                        int verusuario;
+                        cin >> verusuario;
+                        switch (verusuario)
                         {
-                        case 1: 
-                        u->mostrarAmigos();  
-                        break; 
+                        case 1:
+                            u->mostrarAmigos();
+                            cout << endl;
+                            break;
                         case 2:
-                        u->mostrarPublicaciones();
-                        break;
+                            u->mostrarPublicaciones();
+                            cout << endl;
+                            break;
                         case 3:
-                        u->crearPublicacion();
-                        break;
+                            u->crearPublicacion();
+                            cout << endl;
+                            break;
                         case 4:
-                        break;
+                            break;
                         case 5:
-                        cout << "Ingrese el ID del nuevo amigo"<< endl;
-                        cin >> ida;
-                        u->agregarAmigo(rs.getUsuario(ida));
-                        break;
+                            cout << "Ingrese el ID del nuevo amigo" << endl;
+                            cin >> ida;
+                            u->agregarAmigo(rs.getUsuario(ida));
+                            break;
                         case 6:
-                        goto menu;
-                        break;
+                            goto menu;
+                            break;
                         }
-                break;
-        } while (true);
-                
-        break;
+                        break;
+                    } while (true);
+*/
+                    break; 
                 case 5:
-                cout << "Ingrese el ID del nuevo amigo"<< endl;
-                cin >> ida;
-                u->agregarAmigo(rs.getUsuario(ida));
-                break;
+                    cout << "Ingrese el ID del nuevo amigo" << endl;
+                    cin >> ida;
+                    u->agregarAmigo(rs.getUsuario(ida));
+                    rs.getUsuario(ida)->agregarAmigo(u);
+                    break;
                 case 6:
-                goto menu;
-                break;
-            }
-        //break; 
-        } while (true);
-        
-        case 4: 
-        cout << "Ingrese los datos del nuevo usuario:  " << endl;
-         
-        cout << "Username: " << endl;  
-        cin >> uz.nombre;
-        cout << "Edad: " << endl; 
-        cin >> uz.edad; 
-        cout << "Nacionalidad: " << endl;  
-        cin >> uz.nacionalidad; 
-        rs.agregarUsuario(uz);  
-        break; 
+                    goto menu;
+                    break;
+                }
+                // break;
+            } while (true);
 
-        case 5: 
-        return 0; 
-        break; 
-    }
+        case 4:
+            cout << "Ingrese los datos del nuevo usuario:  " << endl;
 
-} while(true);
+            cout << "Username: " << endl;
+            cin >> uz.nombre;
+            cout << "Edad: " << endl;
+            cin >> uz.edad;
+            cout << "Nacionalidad: " << endl;
+            cin >> uz.nacionalidad;
+            rs.agregarUsuario(uz);
+            break;
 
-    //Publicacion p1( , "12-de-marzo", "ostias"); 
+        case 5:
+            return 0;
+            break;
+        }
 
-    return 0; 
+    } while (true);
+
+    // Publicacion p1( , "12-de-marzo", "ostias");
+
+    return 0;
 }
