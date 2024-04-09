@@ -25,6 +25,10 @@ menu:
     rs.agregarUsuario(u2);
     rs.agregarUsuario(u3);
 
+    Publicacion p1(rs.getUsuario(u1.getID()), "15-marzo", "ostias"); 
+    Publicacion *p=&p1;
+    u1.Publicaciones.push_back(p);
+    rs.Publicaciones.push_back(p);
     do
     {
 
@@ -87,51 +91,7 @@ menu:
                     cout << "Ingrese el ID del amigo: " << endl;
                     cin >> id;
                     goto amigo;
-/**
-                    Usuario *a;
-                    a = rs.getUsuario(id);
-                    a->mostrar();
-                    do
-                    {
 
-                        cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl;
-                        cout << "1 ver lista de amigos." << endl;
-                        cout << "2 ver publicaciones." << endl;
-                        cout << "3 crear publicacion." << endl;
-                        cout << "4 entrar al perfil de un amigo." << endl;
-                        cout << "5 agregar un nuevo amigo." << endl;
-                        cout << "6 para volver al menu de la red." << endl;
-
-                        int verusuario;
-                        cin >> verusuario;
-                        switch (verusuario)
-                        {
-                        case 1:
-                            u->mostrarAmigos();
-                            cout << endl;
-                            break;
-                        case 2:
-                            u->mostrarPublicaciones();
-                            cout << endl;
-                            break;
-                        case 3:
-                            u->crearPublicacion();
-                            cout << endl;
-                            break;
-                        case 4:
-                            break;
-                        case 5:
-                            cout << "Ingrese el ID del nuevo amigo" << endl;
-                            cin >> ida;
-                            u->agregarAmigo(rs.getUsuario(ida));
-                            break;
-                        case 6:
-                            goto menu;
-                            break;
-                        }
-                        break;
-                    } while (true);
-*/
                     break; 
                 case 5:
                     cout << "Ingrese el ID del nuevo amigo" << endl;
@@ -141,11 +101,8 @@ menu:
                     break;
                 case 6:
                     goto menu;
-                    break;
-                }
-                // break;
-            } while (true);
-
+                    break;            
+            } }while (true);
         case 4:
             cout << "Ingrese los datos del nuevo usuario:  " << endl;
 
