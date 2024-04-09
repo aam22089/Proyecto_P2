@@ -6,8 +6,9 @@
 #include <iostream>
 using namespace std;
 
-void Usuario::setID()
+void Usuario::setID(int id)
 {
+    this->ID=id;
 }
 
 int Usuario::getID()
