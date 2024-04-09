@@ -9,7 +9,7 @@ int Usuario::getID()
 {
     int id = this->ID;
     return id;
-} 
+}
 
 void Usuario::mostrar()
 {
@@ -41,39 +41,37 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
     Usuario *amigo = nuevoAmigo;
 
     Amigos.push_back(amigo);
-
-
 }
 
 void Usuario::crearPublicacion()
 {
-    cout << "Nueva publicacion" << endl; 
-    string fesha; 
-    cin >> fesha; 
-    string contenido; 
-    cin>> contenido; 
-    Publicacion np(Usuario  *usuario, string fesha, string contenido); 
+    cout << "Nueva publicacion" << endl;
+    string fesha;
+    cin >> fesha;
+    string contenido;
+    cin >> contenido;
+    Publicacion np(Usuario * usuario, string fesha, string contenido);
 }
 
 Usuario *Usuario::getAmigo(int ID)
 {
     int i = 0;
     bool eevee = false;
-    
-    int sprigatito; 
+
+    int sprigatito;
 
     while (i <= Amigos.size())
     {
         if (Amigos[i]->getID() == ID)
         {
-            sprigatito = i; 
+            sprigatito = i;
             eevee = true;
         }
         i++;
     }
     if (eevee)
     {
-        Usuario* un = Amigos[sprigatito];
+        Usuario *un = Amigos[sprigatito];
         return un;
     }
     else
@@ -84,18 +82,18 @@ Usuario *Usuario::getAmigo(int ID)
 
 Usuario::Usuario(string nombre)
 {
-    this->nombre = nombre; 
+    this->nombre = nombre;
 }
 
 Usuario::Usuario(string nombre, int edad)
 {
-    this-> nombre = nombre; 
-    this-> edad = edad; 
+    this->nombre = nombre;
+    this->edad = edad;
 }
 
 Usuario::Usuario(string nombre, int edad, string nacionalidad)
 {
-    this-> nombre = nombre; 
-    this-> edad = edad; 
-    this-> nacionalidad = nacionalidad; 
+    this->nombre = nombre;
+    this->edad = edad;
+    this->nacionalidad = nacionalidad;
 }
