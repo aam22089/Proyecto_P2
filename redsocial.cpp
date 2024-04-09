@@ -5,7 +5,7 @@
 
 void RedSocial::agregarUsuario(Usuario up)
 {
-    Usuario *nu = &up; 
+    Usuario *nu = new Usuario(up); 
     
     this->Usuarios.push_back(nu);
 }
