@@ -1,5 +1,6 @@
 #include "usuario.h"
 #include "publicacion.h"
+#include "redsocial.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -7,7 +8,6 @@ using namespace std;
 
 int Usuario::getID()
 {
-    
     int id = this->ID;
     return id;
 }
