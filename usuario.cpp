@@ -7,6 +7,7 @@ using namespace std;
 
 int Usuario::getID()
 {
+    
     int id = this->ID;
     return id;
 }
