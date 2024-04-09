@@ -4,9 +4,9 @@
 
 void Publicacion::mostrarPublicacion()
 {
-    cout << fesha << endl;
-    cout << usuario->nombre << endl;
-    cout << contenido << endl;
+    cout << this->fesha << endl;
+    cout << this->usuario->nombre << endl;
+    cout << this->contenido << endl;
 }
 
 Publicacion::Publicacion(Usuario *usuario, string fesha, string contenido)
