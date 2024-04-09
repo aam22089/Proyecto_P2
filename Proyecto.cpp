@@ -7,16 +7,17 @@ using namespace std;
 
 int main()
 {
+    RedSocial rs("Xconnect");
 menu:
-    cout << "Bienvenido a nuestra red, que desea hacer?" << endl;
+    cout << "Bienvenido a " << rs.nombre <<", que desea hacer?" << endl;
     cout << "Ingrese: " << endl;
     cout << "1 para ver los usuarios de esta red." << endl;
     cout << "2 para ver las publicaciones que han sido registradas." << endl;
     cout << "3 para entrar al perfil de un usuario por medio de su ID." << endl;
     cout << "4 para agregar un nuevo usuario. " << endl;
-    cout << "Ninguna de las anteriores para salir del programa. " << endl;
+    cout << "5 para salir del programa. " << endl;
 
-    RedSocial rs("Xconnect");
+    
 
     Usuario u1("Tilin123", 12, "Guatemalteco");
     Usuario u2("FazePepinito42", 24, "Estadounidense");
@@ -60,9 +61,10 @@ menu:
             Usuario *u;
             u = rs.getUsuario(id);
             Usuario *na;
-            u->mostrar();
+            
             do
             {
+                u->mostrar();
                 cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl;
                 cout << "1 ver lista de amigos." << endl;
                 cout << "2 ver publicaciones." << endl;

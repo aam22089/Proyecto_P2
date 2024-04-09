@@ -15,7 +15,8 @@ public:
     string nacionalidad;
     vector<Usuario *> Amigos;
     vector<Publicacion *> Publicaciones;
-
+    
+    void setID();
     int getID();
     void mostrar();
     void mostrarAmigos();
