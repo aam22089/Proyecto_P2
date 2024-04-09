@@ -33,9 +33,6 @@ do {
     string nacionalidad; 
     Usuario uz(nombre, edad, nacionalidad);
 
-    Usuario* user;
-    user = new Usuario(nombre, edad, nacionalidad);
-
     switch(op)
     {
         case 1: 
