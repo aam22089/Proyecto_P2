@@ -16,13 +16,13 @@ public:
     vector<Usuario *> Amigos;
     vector<Publicacion *> Publicaciones;
     
-    void setID(int &i);
+    void setID(Usuario idu);
     int getID();
     void mostrar();
     void mostrarAmigos();
     void mostrarPublicaciones();
     void agregarAmigo(Usuario *nuevoAmigo);
-    void crearPublicacion();
+    void crearPublicacion(int ip);
     Usuario *getAmigo(int ID);
 
     Usuario(string nombre);

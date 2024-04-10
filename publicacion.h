@@ -12,9 +12,10 @@ public:
     string fesha;
     string contenido;
     Usuario *usuario;
+    int idn; 
 
     void mostrarPublicacion();
 
-    Publicacion(Usuario *usuario, string fesha, string contenido);
+    Publicacion(Usuario *usuario, int idn, string fesha, string contenido);
 };
 #endif

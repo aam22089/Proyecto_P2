@@ -24,11 +24,14 @@ menu:
     Usuario u2("FazePepinito42", 24, "Estadounidense");
     Usuario u3("Bananin", 87, "Peruano");
     rs.agregarUsuario(u1);
-    u1.setID(i);
+    
+    u1.setID(u1);
     rs.agregarUsuario(u2);
-    u2.setID(i);
+    
+    u2.setID(u2);
     rs.agregarUsuario(u3);
-    u3.setID(i);
+    
+    u3.setID(u3);
 
     /*Publicacion p1(rs.getUsuario(u1.getID()), "15-marzo", "ostias"); 
     Publicacion *p=&p1;
@@ -91,7 +94,8 @@ menu:
                     cout << endl;
                     break;
                 case 3:
-                    u->crearPublicacion();
+                    int idp;
+                    u->crearPublicacion(idp);
                     cout << endl;
                     break;
                 case 4:

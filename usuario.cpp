@@ -6,14 +6,16 @@
 #include <iostream>
 using namespace std;
 
-void Usuario::setID(int &i)
+
+void Usuario::setID(Usuario idu)
 {
-    this->ID=i;
-    i++;
+    //Usuario* au = &idu; 
+    this->ID &idu.edad;  
 }
 
+
 int Usuario::getID()
-{
+{ 
     int id = this->ID;
     return id;
 }
@@ -51,17 +53,21 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
     
 }
 
-void Usuario::crearPublicacion()
+void Usuario::crearPublicacion(int odp)
 {
     cout << "Nueva publicacion" << endl;
-    Usuario* usuario;
+    cout << "Ingrese la fesha de su publicacion: " ; 
     string fesha;
     cin >> fesha;
+    cout << endl; 
+
+    cout << "Ingrese el contenido: " << endl; 
     string contenido;
     cin >> contenido;
-    Publicacion np(usuario, fesha, contenido);
-    Publicacion *p=new Publicacion(np);
-    Publicaciones.push_back(p);
+    cout << endl; 
+  
+    Publicacion* np = new Publicacion(odp, this, fesha, contenido);;
+    this->Publicaciones.push_back(np);
 }
 
 Usuario *Usuario::getAmigo(int ID)
