@@ -2,14 +2,14 @@
 #include "publicacion.h"
 #include "redsocial.h"
 #include <string>
+#include <cmath>
 #include <vector>
 #include <iostream>
 using namespace std;
 
-void Usuario::setID(int i)
+void Usuario::setID()
 {
-    this->ID=i;
-    i++;
+    this->ID=rand()%50000;
 }
 
 int Usuario::getID()
@@ -105,6 +105,14 @@ Usuario::Usuario(string nombre, int edad)
 
 Usuario::Usuario(string nombre, int edad, string nacionalidad)
 {
+    this->nombre = nombre;
+    this->edad = edad;
+    this->nacionalidad = nacionalidad;
+}
+
+Usuario::Usuario(int ID, string nombre, int edad, string nacionalidad)
+{
+    this->ID = ID;
     this->nombre = nombre;
     this->edad = edad;
     this->nacionalidad = nacionalidad;
