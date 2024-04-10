@@ -54,14 +54,15 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
 void Usuario::crearPublicacion()
 {
     cout << "Nueva publicacion" << endl;
-    Usuario* usuario;
+    cout << "Escribe la fecha"<< endl;
     string fesha;
     cin >> fesha;
+    cout << "Escribe el contenido"<< endl;
     string contenido;
     cin >> contenido;
-    Publicacion np(usuario, fesha, contenido);
-    Publicacion *p=new Publicacion(np);
-    Publicaciones.push_back(p);
+    Publicacion *p=new Publicacion(this, fesha, contenido);
+    this->Publicaciones.push_back(p);
+    
 }
 
 Usuario *Usuario::getAmigo(int ID)

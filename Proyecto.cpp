@@ -55,6 +55,7 @@ menu:
             break;
 
         case 2:
+               
             rs.mostrarPublicaciones();
             break;
 

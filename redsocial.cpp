@@ -10,6 +10,11 @@ void RedSocial::agregarUsuario(Usuario up)
     this->Usuarios.push_back(nu);
 }
 
+void RedSocial::agregarPublicacion(Publicacion* p)
+{
+    Publicaciones.push_back(p);
+}
+
 void RedSocial::mostrarUsuarios()
 {
     for (int i = 0; i < Usuarios.size(); i++)
@@ -21,9 +26,12 @@ void RedSocial::mostrarUsuarios()
 
 void RedSocial::mostrarPublicaciones()
 {
-    for (int i = 0; i < Publicaciones.size(); i++)
+    for (int i = 0; i < Usuarios.size(); i++)
     {
-        Publicaciones[i]->mostrarPublicacion();
+        for (int j=0; j<Publicaciones.size();j++)
+        {
+            this->Usuarios[i]->Publicaciones[j]->mostrarPublicacion(); 
+        }
     }
 }
 
