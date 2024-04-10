@@ -86,11 +86,13 @@ menu:
                 switch (verusuario)
                 {
                 case 1:
+                    cout << endl; 
                     u->mostrarAmigos();
                     cout << endl;
                     cout << endl; 
                     break;
                 case 2:
+                    cout << endl; 
                     u->mostrarPublicaciones();
                     cout << endl;
                     cout << endl;
@@ -111,6 +113,7 @@ menu:
                     cin >> ida;
                     u->agregarAmigo(rs.getUsuario(ida));
                     rs.getUsuario(ida)->agregarAmigo(u);
+                    cout << endl; 
                     break;
                 case 6:
                 cout << "Elige la publicacion (numero) "<< endl;

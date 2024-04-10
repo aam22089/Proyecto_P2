@@ -6,7 +6,7 @@ void Publicacion::mostrarPublicacion()
 {
     cout << "| " <<  this->fesha << " " ; 
     cout << "| " << this->usuario->nombre << endl;
-    cout << "| " << this-> contenido << endl;
+    cout << "    | " << this-> contenido << endl;
     cout << "---------------------------- "  << endl;
     this->mostrarComentarios();
 
