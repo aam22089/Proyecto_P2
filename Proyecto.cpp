@@ -61,7 +61,7 @@ menu:
 
         case 3:
             cout << "Ingrese el ID del usuario: " << endl;
-            int id, ida;
+            int id, ida,pub;
             cin >> id;
  amigo:
             Usuario *u;
@@ -78,6 +78,7 @@ menu:
                 cout << "4 entrar al perfil de un amigo." << endl;
                 cout << "5 agregar un nuevo amigo." << endl;
                 cout << "6 para volver al menu de la red." << endl;
+                cout << "7 agregar comentario. "<< endl; 
 
                 int verusuario;
                 cin >> verusuario;
@@ -112,8 +113,10 @@ menu:
                     break;   
 
                 case 7: 
-                    u-> agregarComentario();
-
+                    cout << "Elige la publicacion (numero) "<< endl;
+                    cin >>pub;
+                    u->Publicaciones[pub-1]->agregarComentario();
+                    cout << endl; 
                 break;          
             } }while (true);
         case 4:
