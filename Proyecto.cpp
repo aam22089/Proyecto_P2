@@ -29,11 +29,11 @@ menu:
     Usuario u2("FazePepinito42", 24, "Estadounidense");
     Usuario u3("Bananin", 87, "Peruano");
     rs.agregarUsuario(u1);
-    u1.setID(i);
+    u1.setID(&i);
     rs.agregarUsuario(u2);
-    u2.setID(i);
+    u2.setID(&i);
     rs.agregarUsuario(u3);
-    u3.setID(i);
+    u3.setID(&i);
 
     /*Publicacion p1(rs.getUsuario(u1.getID()), "15-marzo", "ostias"); 
     Publicacion *p=&p1;
