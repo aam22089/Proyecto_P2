@@ -10,8 +10,9 @@ int main()
     RedSocial rs("Gaynet");
     int i=1;
 menu:
+    cout << "                       "<<rs.nombre << endl;
     cout << "                      Bienvenido" << endl; 
-    cout << "                       "<<rs.nombre << endl; 
+ 
     cout << endl;
     cout << "Ingrese: " << endl; 
     cout << "==============================================================" << endl; 
