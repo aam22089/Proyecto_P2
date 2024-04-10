@@ -10,7 +10,7 @@ int main()
     RedSocial rs("Gaynet");
     int i=1;
 menu:
-    cout << "                       "<<rs.nombre << endl;
+    cout << "                         "<<rs.nombre << endl;
     cout << "                      Bienvenido" << endl; 
  
     cout << endl;
@@ -35,11 +35,6 @@ menu:
     u2.setID(i);
     rs.agregarUsuario(u3);
     u3.setID(i);
-
-    /*Publicacion p1(rs.getUsuario(u1.getID()), "15-marzo", "ostias"); 
-    Publicacion *p=&p1;
-    u1.Publicaciones.push_back(p);
-    rs.Publicaciones.push_back(p);*/
     
     do
     {
