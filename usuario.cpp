@@ -6,9 +6,10 @@
 #include <iostream>
 using namespace std;
 
-void Usuario::setID(int id)
+void Usuario::setID(int &i)
 {
-    this->ID=id;
+    this->ID=i;
+    i++;
 }
 
 int Usuario::getID()

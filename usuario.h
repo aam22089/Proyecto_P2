@@ -16,7 +16,7 @@ public:
     vector<Usuario *> Amigos;
     vector<Publicacion *> Publicaciones;
     
-    void setID(int id);
+    void setID(int &i);
     int getID();
     void mostrar();
     void mostrarAmigos();
