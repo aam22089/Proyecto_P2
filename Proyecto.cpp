@@ -68,6 +68,7 @@ menu:
             cout << "Ingrese el ID del usuario: " << endl;
             int id, ida,pub;
             cin >> id;
+            cout << endl; 
  amigo:
             Usuario *u;
             u = rs.getUsuario(id);
@@ -83,8 +84,8 @@ menu:
                 cout << "| 3 crear publicacion.                      |"<< endl;
                 cout << "| 4 entrar al perfil de un amigo.           |"<< endl;
                 cout << "| 5 agregar un nuevo amigo.                 |"<< endl;
-                cout << "| 6 para volver al menu de la red.          |" << endl;
-                cout << "| 7 agregar comentario.                     |" << endl; 
+                cout << "| 6 agregar comentario.                     |" << endl;
+                cout << "| 7 para volver al menu de la red.          |" << endl; 
                 cout << "============================================="  << endl; 
 
                 int verusuario;
@@ -94,14 +95,17 @@ menu:
                 case 1:
                     u->mostrarAmigos();
                     cout << endl;
+                    cout << endl; 
                     break;
                 case 2:
                     u->mostrarPublicaciones();
+                    cout << endl;
                     cout << endl;
                     break;
                 case 3:
                     u->crearPublicacion();
                     cout << endl;
+                    cout << endl; 
                     break;
                 case 4:
                     cout << "Ingrese el ID del amigo: " << endl;
@@ -116,14 +120,16 @@ menu:
                     rs.getUsuario(ida)->agregarAmigo(u);
                     break;
                 case 6:
-                    goto menu;
-                    break;   
-
-                case 7: 
-                    cout << "Elige la publicacion (numero) "<< endl;
-                    cin >>pub;
-                    u->Publicaciones[pub-1]->agregarComentario();
-                    cout << endl; 
+                cout << "Elige la publicacion (numero) "<< endl;
+                cin >>pub;
+                u->Publicaciones[pub-1]->agregarComentario();
+                cout << endl; 
+                    
+                case 7:
+                goto menu;
+                break;   
+ 
+                    
                 break;          
             } }while (true);
         case 4:
