@@ -83,6 +83,7 @@ menu:
 
                 int verusuario;
                 cin >> verusuario;
+                cout << endl; 
                 switch (verusuario)
                 {
                 case 1:
@@ -116,17 +117,16 @@ menu:
                     cout << endl; 
                     break;
                 case 6:
+                u->mostrarPublicaciones();
                 cout << "Elige la publicacion (numero) "<< endl;
                 cin >>pub;
                 u->Publicaciones[pub-1]->agregarComentario();
                 cout << endl; 
-                    
+                break;
+                
                 case 7:
                 goto menu;
-                break;   
- 
-                    
-                break;          
+                break;           
             } }while (true);
         case 4:
             cout << "Ingrese los datos del nuevo usuario:  " << endl;
