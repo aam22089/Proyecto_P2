@@ -54,7 +54,7 @@ void Usuario::agregarAmigo(Usuario *nuevoAmigo)
 void Usuario::crearPublicacion()
 {
     cout << "Nueva publicacion" << endl;
-    cout << "Escribe la fecha"<< endl;
+    cout << "Escribe la fecha del dia de hoy: "<< endl;
     string fesha;
     cin >> fesha;
     cout << "Escribe el contenido"<< endl;
