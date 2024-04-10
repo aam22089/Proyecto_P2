@@ -30,11 +30,20 @@ menu:
     Usuario u2("FazePepinito42", 24, "Estadounidense");
     Usuario u3("Bananin", 87, "Peruano");
     rs.agregarUsuario(u1);
-    u1.setID(i);
+    u1.setID(&i);
     rs.agregarUsuario(u2);
-    u2.setID(i);
+    u2.setID(&i);
     rs.agregarUsuario(u3);
+<<<<<<< HEAD
     u3.setID(i);
+=======
+    u3.setID(&i);
+
+    /*Publicacion p1(rs.getUsuario(u1.getID()), "15-marzo", "ostias"); 
+    Publicacion *p=&p1;
+    u1.Publicaciones.push_back(p);
+    rs.Publicaciones.push_back(p);*/
+>>>>>>> d4a66159c469ed125036c871359eb82928896150
     
     do
     {
