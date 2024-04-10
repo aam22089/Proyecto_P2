@@ -28,10 +28,12 @@ void RedSocial::mostrarPublicaciones()
 {
     for (int i = 0; i < Usuarios.size(); i++)
     {
-        for (int j=0; j<Publicaciones.size();j++)
-        {
-            this->Usuarios[i]->Publicaciones[j]->mostrarPublicacion(); 
-        }
+       this->Publicaciones=Usuarios[i]->Publicaciones;
+       for (int j=0;j<Publicaciones.size();j++)
+       {
+        this->Usuarios[i]->Publicaciones[j]->mostrarPublicacion();
+
+       }
     }
 }
 

@@ -12,8 +12,11 @@ public:
     string fesha;
     string contenido;
     Usuario *usuario;
+    vector <string> comentarios; 
 
     void mostrarPublicacion();
+    void agregarComentario(); 
+    void mostrarComentarios();
 
     Publicacion(Usuario *usuario, string fesha, string contenido);
 };

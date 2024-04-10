@@ -109,7 +109,12 @@ menu:
                     break;
                 case 6:
                     goto menu;
-                    break;            
+                    break;   
+
+                case 7: 
+                    u-> agregarComentario();
+
+                break;          
             } }while (true);
         case 4:
             cout << "Ingrese los datos del nuevo usuario:  " << endl;
