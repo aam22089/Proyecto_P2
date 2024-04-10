@@ -32,6 +32,7 @@ void Publicacion::mostrarComentarios()
 {
     for(int i=0;i<comentarios.size();i++)
     {
+        cout << ">";
         cout << this->comentarios[i];
         cout << endl;
     }
