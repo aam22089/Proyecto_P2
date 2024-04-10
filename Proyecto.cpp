@@ -110,6 +110,8 @@ menu:
 
                     break; 
                 case 5:
+                    
+                    rs.mostrarUsuarios();
                     cout << "Ingrese el ID del nuevo amigo" << endl;
                     cin >> ida;
                     u->agregarAmigo(rs.getUsuario(ida));
