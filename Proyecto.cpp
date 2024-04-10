@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     RedSocial rs("Gaynet");
-    const int i=1;
+    int i=1;
 menu:
     cout << "                         "<<rs.nombre << endl;
     cout << "                      Bienvenido" << endl; 
@@ -26,20 +26,13 @@ menu:
 
     
 
-    Usuario u1("Tilin123", 12, "Guatemalteco");
-    Usuario u2("FazePepinito42", 24, "Estadounidense");
-    Usuario u3("Bananin", 87, "Peruano");
+    Usuario u1(42364,"Tilin123", 12, "Guatemalteco");
+    Usuario u2(76767,"FazePepinito42", 24, "Estadounidense");
+    Usuario u3(34432,"Bananin", 87, "Peruano");
     rs.agregarUsuario(u1);
-    u1.setID(&i);
     rs.agregarUsuario(u2);
-    u2.setID(&i);
     rs.agregarUsuario(u3);
 
-    u3.setID(i);
-
-    u3.setID(&i);
-
-    
     do
     {
 
@@ -48,9 +41,9 @@ menu:
         cout << endl;
 
         string nombre;
-        int edad;
+        int edad,ID;
         string nacionalidad;
-        Usuario uz(nombre, edad, nacionalidad);
+        Usuario uz(ID,nombre, edad, nacionalidad);
 
         switch (op)
         {
@@ -135,6 +128,7 @@ menu:
             cin >> uz.edad;
             cout << "Nacionalidad: " << endl;
             cin >> uz.nacionalidad;
+            uz.setID();
             rs.agregarUsuario(uz);
             break;
 
