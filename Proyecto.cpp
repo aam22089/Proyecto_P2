@@ -146,7 +146,6 @@ menu:
 
     } while (true);
 
-    // Publicacion p1( , "12-de-marzo", "ostias");
 
     return 0;
 }
