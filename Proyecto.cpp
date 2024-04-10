@@ -7,16 +7,21 @@ using namespace std;
 
 int main()
 {
-    RedSocial rs("Xconnect");
+    RedSocial rs("Gaynet");
     int i=1;
 menu:
-    cout << "Bienvenido a " << rs.nombre <<", que desea hacer?" << endl;
-    cout << "Ingrese: " << endl;
-    cout << "1 para ver los usuarios de esta red." << endl;
-    cout << "2 para ver las publicaciones que han sido registradas." << endl;
-    cout << "3 para entrar al perfil de un usuario por medio de su ID." << endl;
-    cout << "4 para agregar un nuevo usuario. " << endl;
-    cout << "5 para salir del programa. " << endl;
+    cout << "                      Bienvenido" << endl; 
+    cout << "                       "<<rs.nombre << endl; 
+    cout << endl;
+    cout << "Ingrese: " << endl; 
+    cout << "==============================================================" << endl; 
+    cout << "| 1 para ver los usuarios de esta red                        |" << endl;
+    cout << "| 2 para ver las publicaciones que han sido registradas.     |" << endl;
+    cout << "| 3 para entrar al perfil de un usuario por medio de su ID.  |" << endl;
+    cout << "| 4 para agregar un nuevo usuario.                           |" << endl;
+    cout << "| 5 para salir del programa.                                 |" << endl;
+    cout << "=============================================================="<< endl;  
+  
 
     
 
@@ -72,13 +77,15 @@ menu:
             {
                 u->mostrar();
                 cout << "Ahora en el perfil de este usuario, tiene las siguientes opciones: " << endl;
-                cout << "1 ver lista de amigos." << endl;
-                cout << "2 ver publicaciones." << endl;
-                cout << "3 crear publicacion." << endl;
-                cout << "4 entrar al perfil de un amigo." << endl;
-                cout << "5 agregar un nuevo amigo." << endl;
-                cout << "6 para volver al menu de la red." << endl;
-                cout << "7 agregar comentario. "<< endl; 
+                cout << "=============================================" << endl; 
+                cout << "| 1 ver lista de amigos.                    |" << endl;
+                cout << "| 2 ver publicaciones.                      |" << endl;
+                cout << "| 3 crear publicacion.                      |"<< endl;
+                cout << "| 4 entrar al perfil de un amigo.           |"<< endl;
+                cout << "| 5 agregar un nuevo amigo.                 |"<< endl;
+                cout << "| 6 para volver al menu de la red.          |" << endl;
+                cout << "| 7 agregar comentario.                     |" << endl; 
+                cout << "============================================="  << endl; 
 
                 int verusuario;
                 cin >> verusuario;
