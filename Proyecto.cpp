@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     RedSocial rs("Gaynet");
-    int i=1;
+    const int i=1;
 menu:
     cout << "                         "<<rs.nombre << endl;
     cout << "                      Bienvenido" << endl; 
